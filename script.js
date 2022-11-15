@@ -6,6 +6,7 @@ function buzzfeedQuiz() {
   
   let button = document.querySelector(".submit");
   let displayResult = document.querySelector(".displayResult");
+  
   let q1 = document.querySelector(".q1");
   let q2 = document.querySelector(".q2");
   let q3 = document.querySelector(".q3");
@@ -14,25 +15,31 @@ function buzzfeedQuiz() {
   // task 5: declare variables for values we'll set later. You'll need one for an image source, a result and a score for each question.
 
   let imgSrc;
-  let character;
-  let q1Score;
-  let q2Score;
-  let q3Score;
+  let cereal;
+  let bookScore;
+  let animeScore;
+  let genreScore;
 
 
   button.onclick = function() {
 
     // task 6: Declare user input variables for each of your questions. If you have three questions, you should have three variables. These variables should equal the value of the user input for each question.
     
-userQ1 = q1.value.toLowerCase();
-    userQ2 = q2.value.toLowerCase();
-    userQ3 = q3.value.toLowerCase();
+    let userBook = book.value.toLowerCase();
+    let userAnime = anime.value.toLowerCase();
+    let userGenre = genre.value.toLowerCase();
 
 
 
 
     // task 7: create a conditional statement for the responses to Question 1 based on the user input.
-
+    if (userBook === "the hunger games") {
+      bookScore = 5;
+    } else if (userBook === "Harry Potter") {
+      bookScore = 6;
+    } else if (userBook === "shadow and bone") {
+      bookScore = 9;
+    } else if (userBook === "")
 
 
 
