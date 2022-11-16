@@ -2,6 +2,7 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: 'Slabo 27px', serif;
+  background-color: #FE4473;
 }
 
 .header {
@@ -46,4 +47,6 @@ button {
   border:3px groove black;
   font-family: monospace;
   padding: 20px;
+  display: flex;
+  justify-content: cen`
 }
